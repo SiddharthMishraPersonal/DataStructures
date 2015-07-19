@@ -16,5 +16,6 @@ public:
     ~TestDataStructures(){};
     void SinglyLinkedListOperations();
     void DoubltLinkedListOperations();
+    void HeapOperations();
 };
 #endif /* defined(__DataStructures__TestDataStructures__) */

@@ -24,6 +24,8 @@ int main(int argc, const char * argv[]) {
     std::cout << "Running DoublyLinkedList test.\n";
     test->DoubltLinkedListOperations();
     
+    std::cout << "Running Heap test.\n";
+    test->HeapOperations();
     
     return 0;
 }

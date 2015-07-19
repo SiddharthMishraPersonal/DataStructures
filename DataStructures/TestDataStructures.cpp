@@ -24,31 +24,30 @@ void TestDataStructures::SinglyLinkedListOperations(){
     list->DisplayList();
     std::cout << "\n";
     
-    /*
-     Node* deletedNode = list->DeleteNode(8);
-     std::cout << "Deleted Node: ";
-     std::cout << deletedNode->GetData();
-     std::cout << "\n";
-     std::cout << "\n";
-     list->DisplayList();
-     std::cout << "\n";
+    
+    Node* deletedNode = list->DeleteNode(8);
+    std::cout << "Deleted Node: ";
+    std::cout << deletedNode->GetData();
+    std::cout << "\n";
+    std::cout << "\n";
+    list->DisplayList();
+    std::cout << "\n";
      
-     deletedNode = list->DeleteFromBegin();
-     std::cout << "Deleted Node: ";
-     std::cout << deletedNode->GetData();
-     std::cout << "\n";
-     std::cout << "\n";
-     list->DisplayList();
-     std::cout << "\n";
+    deletedNode = list->DeleteFromBegin();
+    std::cout << "Deleted Node: ";
+    std::cout << deletedNode->GetData();
+    std::cout << "\n";
+    std::cout << "\n";
+    list->DisplayList();
+    std::cout << "\n";
      
-     deletedNode = list->DeleteFromEnd();
-     std::cout << "Deleted Node: ";
-     std::cout << deletedNode->GetData();
-     std::cout << "\n";
-     std::cout << "\n";
-     list->DisplayList();
-     std::cout << "\n";
-     */
+    deletedNode = list->DeleteFromEnd();
+    std::cout << "Deleted Node: ";
+    std::cout << deletedNode->GetData();
+    std::cout << "\n";
+    std::cout << "\n";
+    list->DisplayList();
+    std::cout << "\n";
     
     list->ReverseList();
     std::cout << "\n";
@@ -98,4 +97,8 @@ void TestDataStructures::DoubltLinkedListOperations(){
     
     // Display
     list->Display();
+}
+
+void TestDataStructures::HeapOperations(){
+    
 }
