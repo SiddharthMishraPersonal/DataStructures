@@ -9,13 +9,14 @@
 #include "TestDataStructures.h"
 #include "Node.h"
 #include "SinglyLinkedList.h"
+#include "DoublyLinkedList.h"
 
 void TestDataStructures::SinglyLinkedListOperations(){
     SinglyLinkedList* list = new SinglyLinkedList();
     
     list->InsertInMiddle(9);
     list->InsertInMiddle(3);
-    list->InsertInMiddle(5);
+    list->InsertAtEnd(5);
     list->InsertInMiddle(8);
     list->InsertInMiddle(7);
     list->InsertInMiddle(4);
@@ -55,4 +56,46 @@ void TestDataStructures::SinglyLinkedListOperations(){
     list->DisplayList();
     std::cout << "\n";
 
+}
+
+void TestDataStructures::DoubltLinkedListOperations(){
+    DoublyLinkedList* list = new DoublyLinkedList();
+    
+    // Display
+    list->Display();
+    
+    std::cout << "Insert at beginning.\n";
+    // Insert at begining
+    list->InsertAtBeginning(3);
+    list->InsertAtBeginning(4);
+    list->InsertAtBeginning(2);
+    list->InsertAtBeginning(6);
+    list->InsertAtBeginning(8);
+    
+    // Display
+    list->Display();
+    
+    std::cout << "Insert at End.\n";
+    // Insert at begining
+    list->InsertAtEnd(3);
+    list->InsertAtEnd(4);
+    list->InsertAtEnd(2);
+    list->InsertAtEnd(6);
+    list->InsertAtEnd(8);
+    
+    // Display
+    list->Display();
+    
+    list = new DoublyLinkedList();
+    
+    std::cout << "Insert at Middle.\n";
+    // Insert at begining
+    list->InsertInMiddle(3);
+    list->InsertInMiddle(4);
+    list->InsertInMiddle(2);
+    list->InsertInMiddle(6);
+    list->InsertInMiddle(8);
+    
+    // Display
+    list->Display();
 }

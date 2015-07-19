@@ -13,17 +13,24 @@
 
 class Node {
     
-private: int cData;
-    Node *node;
+private:
+    int cData;
+    Node *nextNode;
+    Node *previousNode;
     
 public :
     Node(int data){
         cData = data;
+        nextNode=nullptr;
+        previousNode=nullptr;
     }
     
     int GetData();
-    void SetNext(Node *nextNode);
+    void SetNext(Node *node);
+    void SetPrevious(Node *node);
+    
     Node* GetNext();
+    Node* GetPrevious();
 };
 
 #endif /* defined(__DataStructures__Node__) */

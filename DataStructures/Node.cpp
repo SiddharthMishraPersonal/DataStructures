@@ -12,10 +12,18 @@ int Node::GetData(){
     return cData;
 }
 
-void Node::SetNext(Node *nextNode){
-    node = nextNode;
+void Node::SetNext(Node *node){
+    nextNode = node;
+}
+
+void Node::SetPrevious(Node *node){
+    previousNode = node;
 }
 
 Node* Node::GetNext(){
-    return node;
+    return nextNode;
+}
+
+Node* Node::GetPrevious(){
+    return previousNode;
 }

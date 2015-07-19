@@ -30,7 +30,6 @@ bool SinglyLinkedList::InsertAtBegin( int data){
     // If list is not empty then add Node in between head and the next node.
     if(headNode->GetNext()==nullptr){
         headNode->SetNext(newNode);
-        return true;
     }else{
         Node* nextNode = headNode->GetNext();
         newNode->SetNext(nextNode);
@@ -50,7 +49,6 @@ bool SinglyLinkedList::InsertAtEnd(int data){
             Node* newNode = new Node(data);
     if(headNode->GetNext()==nullptr){
         headNode->SetNext(newNode);
-        return true;
     }else{
         Node* currentNode = headNode->GetNext();
         

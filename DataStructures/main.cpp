@@ -17,8 +17,13 @@ int main(int argc, const char * argv[]) {
     TestDataStructures* test = new TestDataStructures();
     
     // Test SinglyLinkedList
-    std::cout << "Running SinglyDataStructure test. Siddharth";
+    std::cout << "Running SinglyDataStructure test.\n";
     test->SinglyLinkedListOperations();
+    
+    // Test DoublyLinkedList
+    std::cout << "Running DoublyLinkedList test.\n";
+    test->DoubltLinkedListOperations();
+    
     
     return 0;
 }

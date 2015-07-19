@@ -22,7 +22,8 @@ public:
         headNode = new Node(0);
     }
     
-    ~SinglyLinkedList(){}
+    ~SinglyLinkedList(){
+        headNode=nullptr;}
     
     void DisplayList();
     bool InsertAtBegin( int data);

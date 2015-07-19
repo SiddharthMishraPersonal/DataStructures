@@ -11,6 +11,7 @@
 		0B28EE1B1B5B88F3007C6156 /* SinglyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B28EE191B5B88F3007C6156 /* SinglyLinkedList.cpp */; };
 		0B28EE1E1B5B898C007C6156 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B28EE1C1B5B898C007C6156 /* Node.cpp */; };
 		0B3DD6EF1B5C067600E13778 /* TestDataStructures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD6ED1B5C067600E13778 /* TestDataStructures.cpp */; };
+		0B3DD6F21B5C144B00E13778 /* DoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD6F01B5C144B00E13778 /* DoublyLinkedList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		0B28EE1D1B5B898C007C6156 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		0B3DD6ED1B5C067600E13778 /* TestDataStructures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestDataStructures.cpp; sourceTree = "<group>"; };
 		0B3DD6EE1B5C067600E13778 /* TestDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataStructures.h; sourceTree = "<group>"; };
+		0B3DD6F01B5C144B00E13778 /* DoublyLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoublyLinkedList.cpp; sourceTree = "<group>"; };
+		0B3DD6F11B5C144B00E13778 /* DoublyLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoublyLinkedList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				0B28EE1D1B5B898C007C6156 /* Node.h */,
 				0B3DD6ED1B5C067600E13778 /* TestDataStructures.cpp */,
 				0B3DD6EE1B5C067600E13778 /* TestDataStructures.h */,
+				0B3DD6F01B5C144B00E13778 /* DoublyLinkedList.cpp */,
+				0B3DD6F11B5C144B00E13778 /* DoublyLinkedList.h */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				0B3DD6EF1B5C067600E13778 /* TestDataStructures.cpp in Sources */,
 				0B28EE1B1B5B88F3007C6156 /* SinglyLinkedList.cpp in Sources */,
 				0B28EE101B5B57AA007C6156 /* main.cpp in Sources */,
+				0B3DD6F21B5C144B00E13778 /* DoublyLinkedList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
