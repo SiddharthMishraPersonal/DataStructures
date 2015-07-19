@@ -12,8 +12,6 @@
 	<dict>
 		<key>738BE02079475FE3417F233E85D4C36667E85C6E</key>
 		<string>https://github.com/SiddharthMishraPersonal/DataStructures.git</string>
-		<key>FECD01A5ED4537395405E0D690EB57DEE5D9FC0A</key>
-		<string>https://github.com/SiddharthMishraPersonal/DataStructures.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DataStructures.xcodeproj</string>
@@ -21,15 +19,13 @@
 	<dict>
 		<key>738BE02079475FE3417F233E85D4C36667E85C6E</key>
 		<string>../../..</string>
-		<key>FECD01A5ED4537395405E0D690EB57DEE5D9FC0A</key>
-		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/SiddharthMishraPersonal/DataStructures.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FECD01A5ED4537395405E0D690EB57DEE5D9FC0A</string>
+	<string>738BE02079475FE3417F233E85D4C36667E85C6E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -44,7 +40,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FECD01A5ED4537395405E0D690EB57DEE5D9FC0A</string>
+			<string>738BE02079475FE3417F233E85D4C36667E85C6E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DataStructures</string>
 		</dict>
