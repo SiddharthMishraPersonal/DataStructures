@@ -92,13 +92,18 @@ bool DoublyLinkedList::InsertInMiddle(int data){
         else{
             Node* currentNode = headNode->GetNext();
             
-            while (currentNode->GetNext()!=nullptr && currentNode->GetData()<= data) {
+            while (currentNode->GetNext()!=nullptr && currentNode->GetData() <= data) {
                currentNode = currentNode->GetNext();
             }
             
-            newNode->SetNext(currentNode->GetNext());
-            newNode->SetPrevious(currentNode);
-            currentNode->SetNext(newNode);
+            newNode->SetNext(currentNode);
+            newNode->SetPrevious(currentNode->GetPrevious());
+            currentNode->GetPrevious()->SetNext(newNode);
+            currentNode->SetPrevious(newNode);
+            
+            //newNode->SetNext(currentNode->GetNext());
+            //newNode->SetPrevious(currentNode);
+            //currentNode->SetNext(newNode);
         }
         
     } catch (errno_t) {

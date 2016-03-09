@@ -23,7 +23,8 @@ public:
     }
     
     ~SinglyLinkedList(){
-        headNode=nullptr;}
+        headNode=nullptr;
+    }
     
     void DisplayList();
     bool InsertAtBegin( int data);

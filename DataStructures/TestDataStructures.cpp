@@ -76,29 +76,31 @@ void TestDataStructures::DoubltLinkedListOperations(){
     
     std::cout << "Insert at End.\n";
     // Insert at begining
-    list->InsertAtEnd(3);
-    list->InsertAtEnd(4);
-    list->InsertAtEnd(2);
-    list->InsertAtEnd(6);
-    list->InsertAtEnd(8);
+    list->InsertAtEnd(33);
+    list->InsertAtEnd(44);
+    list->InsertAtEnd(22);
+    list->InsertAtEnd(66);
+    list->InsertAtEnd(88);
     
     // Display
     list->Display();
     
-    list = new DoublyLinkedList();
+    //list = new DoublyLinkedList();
     
     std::cout << "Insert at Middle.\n";
     // Insert at begining
-    list->InsertInMiddle(3);
-    list->InsertInMiddle(4);
-    list->InsertInMiddle(2);
+    
+    list->InsertInMiddle(13);
+    list->InsertInMiddle(84);
+    list->InsertInMiddle(12);
     list->InsertInMiddle(6);
-    list->InsertInMiddle(8);
+    list->InsertInMiddle(18);
     
     // Display
     list->Display();
 }
 
 void TestDataStructures::HeapOperations(){
+    
     
 }
