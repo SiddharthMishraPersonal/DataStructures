@@ -7,7 +7,11 @@ From: http://robin-thomas.github.io/min-heap/
 ##Min heap is data structure that satisfies two properties :
 ###Shape property
 It states that min heap is a complete binary tree, which is a binary tree that is filled at all levels, except perhaps the last level, which is filled from left to right.
-We can infer a couple of things from the above statement. Firstly, the leaf nodes of the tree will be in last level or the level above it. Secondly, in all levels except perhaps the last level, every parent node should exactly have two children. And finally, no right sibilng can exist without its left sibling.
+We can infer a couple of things from the above statement. 
+
+1. The leaf nodes of the tree will be in last level or the level above it. 
+2. In all levels except perhaps the last level, every parent node should exactly have two children. 
+3. No right sibilng can exist without its left sibling.
 
 ###Heap property
 It states that the value of the parent node is always less than or equal to that of its children.
