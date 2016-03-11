@@ -4,20 +4,21 @@ All Data Structure programs from Xcode on OS-X
 #Heap Data Structure
 From: http://robin-thomas.github.io/min-heap/
 
-#Min heap is data structure that satisfies two properties :
-#Shape property
+##Min heap is data structure that satisfies two properties :
+###Shape property
 It states that min heap is a complete binary tree, which is a binary tree that is filled at all levels, except perhaps the last level, which is filled from left to right.
 We can infer a couple of things from the above statement. Firstly, the leaf nodes of the tree will be in last level or the level above it. Secondly, in all levels except perhaps the last level, every parent node should exactly have two children. And finally, no right sibilng can exist without its left sibling.
 
-#Heap property
+###Heap property
 It states that the value of the parent node is always less than or equal to that of its children.
 It means that the minimum value in the heap shall occur at the root node, and the maximum value in the heap shall occur at any of the leaf nodes. Do note that heap property doesn't mention any relationship between the left and right sibling of a node. The left sibling may have a value lower than the right sibling, or it may be the other way around. As long as every parent has a value lower than its siblings, heap property is satisfied.
 If any of the above two property is violated, its not a min heap.
 
-#Various Heap Operations
+###Various Heap Operations
 
 Various operations like insertion and deletion of a node can be done efficiently using a min heap structure. But before we get into that, lets first start with how to create a min heap structure. Given below is the C code for the same.
 
+```c
 #define LCHILD(x) 2 * x + 1
 #define RCHILD(x) 2 * x + 2
 #define PARENT(x) (x - 1) / 2
@@ -30,6 +31,7 @@ typedef struct minHeap {
     int size ;
     node *elem ;
 } minHeap ;
+```
 
 In the above code, we are creating two structures, one to represent a node and other to represent the entire min heap. The node structure has only a single member to hold the data. The minHeap structure has two members - one to hold the total size of the min heap at any time, and the other is a pointer to the heap.
 
@@ -48,7 +50,7 @@ We are creating a variale of type minHeap and setting its size variable to 0, an
 
 minHeap hp = initMinHeap() ;
 
-#Insertion
+####Insertion
 
 At best case, it takes only O(1) time to insert a node into min heap. But at worst case, the new node may be lower than all nodes in the heap, that it needs to be compared with log(n) elements at most to be put into the root node position. So insertion operation is normally considered as an O(logn) operation. Given below is the C code for the same.
 
@@ -78,7 +80,7 @@ In second part of insertNode() function, we simply create a node variable and in
 
 In last part of insertNode() function, we shall find the correct position for the new node in min heap structure. We consider the new memory space created. We shall compare value of last node with the new node value. If its more, we shall move it to the new memory location. We shall now check its parent node, and compare it with new node. If its more, we shall move it to old position of last node. It will continue until we find a node which has value lower than the new node, and place the new node as a child node of that node.
 
-#Deletion
+####Deletion
 Deletion operation is quite different from insertion operation. In each deletion operation, we shall delete the minimum element from min heap, ie, we shall always delete the root node in each deletion operation, and place the last node in root node position. Since we are placing a leaf node in root node, its guaranteed that heap property shall be violated. We shall then call a special function called heapify() function recursively to make sure that heap property is satisfied.
 
 void swap(node *n1, node *n2) {
@@ -111,7 +113,7 @@ In deleteNode() function, last node is placed at root node position, heap size d
 
 In heapify() function, given a node at index i, we shall compare all the three nodes (parent, left and right child), and find the smallest node among the three. If its not the parent node, then heap property is violated. Swap parent node with smallest node, and call heapify() function until heap property is satisfied.
 
-#BuildMinHeap
+####BuildMinHeap
 Given an array of n numbers, we can call the insertNode() function n times to create the min heap. Since each call to insertNode() can take upto O(logn) time, we need a maximum of O(nlogn) time to create the entire min heap. But instead of following such an approach, we can follow a relatively better buildMinHeap() function that requires only O(n) time.
 
 void buildMinHeap(minHeap *hp, int *arr, int size) {
@@ -138,12 +140,13 @@ In first step, we insert all elements from the array into the min heap without b
 
 In last step, we shall determine the last parent in the heap and call heapify() function on that parent node, until heap property is satisfied for that node. We shall then work back by calling heapify() function on each of those parent nodes, until we reach root node, by which time, heap property shall be satisfied.
 
-#Traversal
+####Traversal
 There are mainly two types of traversals possible on a min heap - depth first traversal and breadth first (level order) traversal.
 
 In depth first traversal, we visit the nodes depth-wise, meaning that we go deeper and deeper into childrens of a left sibling before covering the right sibling. There are mainly three depth first traversals possible - inorder, preorder and postorder traversal.
 
-#Inorder Traversal
+#####Inorder Traversal
+
 void inorderTraversal(minHeap *hp, int i) {
     if(LCHILD(i) < hp->size) {
         inorderTraversal(hp, LCHILD(i)) ;
@@ -155,7 +158,8 @@ void inorderTraversal(minHeap *hp, int i) {
 }
 In the above function, we check whether left child of a node at index i exists in the heap. If yes, we call the inorderTraveral() function on the left child. We now display value of the node at index i. Then we check whether right child of a node at index i exists in the heap. If yes, we call inorderTraversal() on the right child. This shall continue until we traverse the whole min heap.
 
-#Preorder Traversal
+#####Preorder Traversal
+
 void preorderTraversal(minHeap *hp, int i) {
     if(LCHILD(i) < hp->size) {
         preorderTraversal(hp, LCHILD(i)) ;
@@ -167,7 +171,8 @@ void preorderTraversal(minHeap *hp, int i) {
 }
 In the above function, we check whether left child of the node at index i exists. If yes, we call preorderTraversal() on the left child. We then check whether right of the node exists. If yes, we call preorderTraversal() on the right child. we then display the value of the node at index i. We can see that code for preorderTraversal() and inorderTraversal() are quite similar and shall be similar to postorderTraversal() function. The only difference is the order in which the recursive functions are called.
 
-#Postorder Traversal
+#####Postorder Traversal
+
 void postorderTraversal(minHeap *hp, int i) {
     printf("%d ", hp->elem[i].data) ;
     if(LCHILD(i) < hp->size) {
