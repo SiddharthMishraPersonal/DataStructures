@@ -12,23 +12,59 @@
 #include <stdio.h>
 #include "TreeNode.h"
 
+#define LEFTCHILD(x) 2 * x + 1;
+#define RIGHTCHILD(x) 2 * x + 2;
+#define PARENT(x) (x - 1)/2;
+
+class HeapNode{
+private:
+    int nodeData;
+public:
+    HeapNode(int data){
+        nodeData = data;
+    }
+    
+    int GetData();
+};
+
+class MinHeap{
+private:
+    int size;
+    HeapNode *element;
+    public:
+    MinHeap(){
+        size = 0;
+        element = nullptr;
+    }
+    
+    int GetSize();
+    HeapNode GetElement();
+};
+
 class Heap{
 private:
-    TreeNode* headNode;
+    HeapNode* heapNode;
+    MinHeap* minHeap;
+    void Swap(HeapNode* first, HeapNode* second){
+        HeapNode temp = *first;
+        *first = *second;
+        *second = temp;
+    }
 public:
     Heap(){
-        headNode = new TreeNode(0);
+        minHeap = new MinHeap();
     }
     ~Heap(){
-        headNode= nullptr;
+        minHeap= nullptr;
     }
     
     void Heapify();
-    void Insert(TreeNode* node);
+    void Insert(MinHeap* minHeap, int data);
     void Display();
     
-    TreeNode* Delete(TreeNode* node);
-    TreeNode* GetRoot();
+    void Delete(MinHeap* minHeap);
 };
+
+
 
 #endif /* defined(__DataStructures__Heap__) */

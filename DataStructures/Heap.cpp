@@ -10,7 +10,7 @@
 #include "TreeNode.h"
 #include "iostream"
 
-void Heap::Insert(TreeNode *node){
+void Heap::Insert(MinHeap* minHeap, int data){
     
 }
 
@@ -18,12 +18,8 @@ void Heap::Heapify(){
     
 }
 
-TreeNode* Heap::Delete(TreeNode *node){
-    return nullptr;
-}
-
-TreeNode* Heap::GetRoot(){
-    return nullptr;
+void Heap::Delete(MinHeap* minHeap){
+    
 }
 
 void Heap::Display(){
