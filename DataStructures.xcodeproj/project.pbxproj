@@ -14,6 +14,7 @@
 		0B3DD6F21B5C144B00E13778 /* DoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD6F01B5C144B00E13778 /* DoublyLinkedList.cpp */; };
 		0B3DD6F51B5C33CD00E13778 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD6F31B5C33CD00E13778 /* Heap.cpp */; };
 		0B3DD6F81B5C33FB00E13778 /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD6F61B5C33FB00E13778 /* TreeNode.cpp */; };
+		0BB1C27B1C97D5EB00A9A314 /* HeapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB1C2791C97D5EB00A9A314 /* HeapNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		0B3DD6F41B5C33CD00E13778 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
 		0B3DD6F61B5C33FB00E13778 /* TreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeNode.cpp; sourceTree = "<group>"; };
 		0B3DD6F71B5C33FB00E13778 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		0BB1C2791C97D5EB00A9A314 /* HeapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeapNode.cpp; sourceTree = "<group>"; };
+		0BB1C27A1C97D5EB00A9A314 /* HeapNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HeapNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				0B3DD6F41B5C33CD00E13778 /* Heap.h */,
 				0B3DD6F61B5C33FB00E13778 /* TreeNode.cpp */,
 				0B3DD6F71B5C33FB00E13778 /* TreeNode.h */,
+				0BB1C2791C97D5EB00A9A314 /* HeapNode.cpp */,
+				0BB1C27A1C97D5EB00A9A314 /* HeapNode.hpp */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B28EE1E1B5B898C007C6156 /* Node.cpp in Sources */,
+				0BB1C27B1C97D5EB00A9A314 /* HeapNode.cpp in Sources */,
 				0B3DD6EF1B5C067600E13778 /* TestDataStructures.cpp in Sources */,
 				0B28EE1B1B5B88F3007C6156 /* SinglyLinkedList.cpp in Sources */,
 				0B3DD6F51B5C33CD00E13778 /* Heap.cpp in Sources */,

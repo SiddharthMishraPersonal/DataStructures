@@ -10,61 +10,50 @@
 #define __DataStructures__Heap__
 
 #include <stdio.h>
-#include "TreeNode.h"
+#include "HeapNode.hpp"
 
-#define LEFTCHILD(x) 2 * x + 1;
-#define RIGHTCHILD(x) 2 * x + 2;
-#define PARENT(x) (x - 1)/2;
+#define LCHILD(x) 2 * x + 1
+#define RCHILD(x) 2 * x + 2
+#define PARENT(x) (x - 1) / 2
 
-class HeapNode{
-private:
-    int nodeData;
-public:
-    HeapNode(int data){
-        nodeData = data;
-    }
-    
-    int GetData();
-};
 
+// MinHeap class inserts, deletes and heapify the heap.
 class MinHeap{
 private:
-    int size;
-    HeapNode *element;
-    public:
-    MinHeap(){
-        size = 0;
-        element = nullptr;
-    }
+    int heapSize;
+    HeapNode* element[20];
     
-    int GetSize();
-    HeapNode GetElement();
-};
-
-class Heap{
-private:
-    HeapNode* heapNode;
-    MinHeap* minHeap;
-    void Swap(HeapNode* first, HeapNode* second){
-        HeapNode temp = *first;
-        *first = *second;
-        *second = temp;
-    }
 public:
-    Heap(){
-        minHeap = new MinHeap();
-    }
-    ~Heap(){
-        minHeap= nullptr;
+    
+    int GetHeapSize(){
+        return heapSize;
     }
     
+    HeapNode* GetParentNode(int index){
+        return element[((index -1)/2)];
+    }
+    
+    HeapNode* GetLeftChildNode(int index){
+        return element[(2 * index + 1)];
+    }
+    
+    HeapNode* GetRightChildNode(int index){
+        return element[(2 * index + 2)];
+    }
+    
+    void AddItemToArray(HeapNode* heapNode, int index){
+        element[index] = heapNode;
+        heapSize++;
+    }
+    
+    
+    
+    void Swap(HeapNode* node1, HeapNode* node2);
+    
+    void Insert(int data);
+    void Delete();
     void Heapify();
-    void Insert(MinHeap* minHeap, int data);
-    void Display();
     
-    void Delete(MinHeap* minHeap);
 };
-
-
 
 #endif /* defined(__DataStructures__Heap__) */
