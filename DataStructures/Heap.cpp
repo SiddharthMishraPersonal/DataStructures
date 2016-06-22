@@ -7,3 +7,18 @@
 //
 
 #include "Heap.h"
+#include "TreeNode.h"
+#include "iostream"
+
+void Heap::Insert(int data){
+    try {
+        if(headNode==nullptr){
+            headNode = new TreeNode(data);
+        }
+        else{
+            
+        }
+    } catch (errno_t) {
+        std::cout << "Error occurred while inserting data into Heap.\n";
+    }
+}

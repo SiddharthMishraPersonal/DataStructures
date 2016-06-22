@@ -24,7 +24,7 @@ public:
     }
     
     void Heapify();
-    void Insert(TreeNode* node);
+    void Insert(int data);
     void Display();
     
     TreeNode* Delete(TreeNode* node);

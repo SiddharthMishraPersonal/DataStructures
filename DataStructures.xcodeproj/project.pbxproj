@@ -14,6 +14,7 @@
 		0B3DD6F21B5C144B00E13778 /* DoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD6F01B5C144B00E13778 /* DoublyLinkedList.cpp */; };
 		0B3DD6F51B5C33CD00E13778 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD6F31B5C33CD00E13778 /* Heap.cpp */; };
 		0B3DD6F81B5C33FB00E13778 /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD6F61B5C33FB00E13778 /* TreeNode.cpp */; };
+		0B7BB7791B609B7F006BA7D9 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B7BB7771B609B7F006BA7D9 /* BinaryTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		0B3DD6F41B5C33CD00E13778 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
 		0B3DD6F61B5C33FB00E13778 /* TreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeNode.cpp; sourceTree = "<group>"; };
 		0B3DD6F71B5C33FB00E13778 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		0B7BB7771B609B7F006BA7D9 /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		0B7BB7781B609B7F006BA7D9 /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				0B3DD6F41B5C33CD00E13778 /* Heap.h */,
 				0B3DD6F61B5C33FB00E13778 /* TreeNode.cpp */,
 				0B3DD6F71B5C33FB00E13778 /* TreeNode.h */,
+				0B7BB7771B609B7F006BA7D9 /* BinaryTree.cpp */,
+				0B7BB7781B609B7F006BA7D9 /* BinaryTree.h */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				0B3DD6EF1B5C067600E13778 /* TestDataStructures.cpp in Sources */,
 				0B28EE1B1B5B88F3007C6156 /* SinglyLinkedList.cpp in Sources */,
 				0B3DD6F51B5C33CD00E13778 /* Heap.cpp in Sources */,
+				0B7BB7791B609B7F006BA7D9 /* BinaryTree.cpp in Sources */,
 				0B28EE101B5B57AA007C6156 /* main.cpp in Sources */,
 				0B3DD6F81B5C33FB00E13778 /* TreeNode.cpp in Sources */,
 				0B3DD6F21B5C144B00E13778 /* DoublyLinkedList.cpp in Sources */,
